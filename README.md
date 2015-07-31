@@ -13,7 +13,7 @@ Front-End Skeleton for Symfony2 Development
 - The project involves the (very light) CSS Framework KNACSS. You can read all the documentation (in french) about it here:
 http://knacss.com or https://github.com/raphaelgoetter/KNACSS
 
-- You will find the iconic font and CSS toolkit FONT-AWESOME here: http://fortawesome.github.io/Font-Awesome/
+- You will find the iconic font and CSS toolkit FONT-AWESOME. Documentation here: http://fortawesome.github.io/Font-Awesome/
 
 - Frontskel-sf project uses the CSS pre-processor LESS for every external and internal components (with the help of leafo/lessphp bundle).
 
