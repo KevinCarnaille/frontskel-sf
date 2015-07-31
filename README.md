@@ -4,13 +4,13 @@ Front-End Skeleton for Symfony2 Development
 
 # Installation requirements:
 
-php composer.phar install
-php app/console assets:install web --symlink
+- php composer.phar install
+- php app/console assets:install web --symlink
 
 
 # Components:
 
-- The project involves the (very light) CSS Framework KNCASS. You can read all the documentation (in french) about it here:
+- The project involves the (very light) CSS Framework KNACSS. You can read all the documentation (in french) about it here:
 http://knacss.com or https://github.com/raphaelgoetter/KNACSS
 
 - You will find the iconic font and CSS toolkit FONT-AWESOME here: http://fortawesome.github.io/Font-Awesome/
