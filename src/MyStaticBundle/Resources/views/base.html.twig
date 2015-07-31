@@ -12,7 +12,9 @@
         {% stylesheets
         '@MyStaticBundle/Resources/public/css/knacss/knacss.less'
         '@MyStaticBundle/Resources/public/css/font-awesome/font-awesome.less'
-        '@MyStaticBundle/Resources/public/css/global.less' %}
+        '@MyStaticBundle/Resources/public/css/global.less'
+        '@MyStaticBundle/Resources/public/css/responsive.less'
+        filter='uglifycss' filter='cssrewrite' %}
 
                 <link rel="stylesheet" href="{{ asset_url }}">
 
@@ -55,7 +57,10 @@
 
 {% block javascripts %}
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="{{ asset('bundles/mystatic/js/global.js') }}"></script>
+
+    {% javascripts '@MyStaticBundle/Resources/public/js/global.js' %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
 {% endblock %}
 </body>
 </html>

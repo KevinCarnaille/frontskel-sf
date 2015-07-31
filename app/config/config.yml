@@ -42,8 +42,10 @@ assetic:
    use_controller: false
    filters:
         cssrewrite: ~
+        uglifycss:
+            bin: %kernel.root_dir%\Resources\public\uglifycss\uglifycss
         lessphp:
-#            file: %kernel.root_dir%/../vendor/leafo/lessphp/lessc.inc.php
+            file: %kernel.root_dir%/../vendor/leafo/lessphp/lessc.inc.php
             apply_to: "\.less$"
             formatter: "compressed"
 
