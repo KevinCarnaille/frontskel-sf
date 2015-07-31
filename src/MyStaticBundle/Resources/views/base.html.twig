@@ -20,6 +20,18 @@
     {% endblock %}
 
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+
+    <!--[if lt IE 9]>
+
+    <script type="text/javascript" src="{{ asset('bundles/mystatic/js/html5shiv.js' }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/mystatic/js/placeholder.min.js' }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/mystatic/js/respond.min.js' }}"></script>
+
+
+    <![endif]-->
+
+
 </head>
 
 <body id="{% block id_body %}default{% endblock %}">

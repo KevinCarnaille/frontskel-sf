@@ -17,8 +17,10 @@ http://knacss.com or https://github.com/raphaelgoetter/KNACSS
 
 - Frontskel-sf project uses the CSS pre-processor LESS for every external and internal components (with the help of leafo/lessphp bundle).
 
+- HTML5shiv.js / Placeholder.js / Respond.js for all < IE9 issues
 
-################
+
+///////////////
 
 Work in Progress
 
