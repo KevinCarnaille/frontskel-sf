@@ -2,10 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{{ pagename }}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="title" content="{% block title_meta %}{% endblock %}" />
-    <meta name="description" content="{% block description_meta %}{% endblock %}" />
+    <meta name="title" content="{% block title_meta %}{{ pagename }}{% endblock %}" />
+    <meta name="keywords" content="{% block keywords_meta %}{{ pagename }}{% endblock %}" />
+    <meta name="description" content="{% block description_meta %}{{ pagename }}{% endblock %}" />
 
     {% block stylesheets %}
         {% stylesheets
@@ -24,9 +25,9 @@
 
     <!--[if lt IE 9]>
 
-    <script type="text/javascript" src="{{ asset('bundles/mystatic/js/html5shiv.js' }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/mystatic/js/placeholder.min.js' }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/mystatic/js/respond.min.js' }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/mystatic/js/html5shiv.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/mystatic/js/placeholder.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/mystatic/js/respond.min.js') }}"></script>
 
 
     <![endif]-->
