@@ -1,0 +1,4 @@
+services:
+#    my_static.example:
+#        class: MyStaticBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

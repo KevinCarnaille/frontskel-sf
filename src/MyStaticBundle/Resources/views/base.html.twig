@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="title" content="{% block title_meta %}{% endblock %}" />
+    <meta name="description" content="{% block description_meta %}{% endblock %}" />
+
+    {% block stylesheets %}
+        {% stylesheets
+        '@MyStaticBundle/Resources/public/css/knacss/knacss.less'
+        '@MyStaticBundle/Resources/public/css/font-awesome/font-awesome.less'
+        '@MyStaticBundle/Resources/public/css/global.less' %}
+
+                <link rel="stylesheet" href="{{ asset_url }}">
+
+        {% endstylesheets %}
+
+    {% endblock %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+
+<body id="{% block id_body %}default{% endblock %}">
+
+
+<header id="main_header">
+    {% block header %}
+    {% endblock %}
+</header>
+
+{% block body %}
+{% endblock %}
+
+
+<footer id="main_footer">
+    {% block footer %}
+    {% endblock %}
+</footer>
+
+
+{% block javascripts %}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="{{ asset('bundles/mystatic/js/global.js') }}"></script>
+{% endblock %}
+</body>
+</html>
