@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="UTF-8" />
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{{ pagename }}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="title" content="{% block title_meta %}{% endblock %}" />
-    <meta name="keywords" content="{% block keywords_meta %}{% endblock %}" />
-    <meta name="description" content="{% block description_meta %}{% endblock %}" />
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-
+    <meta name="title" content="{% block title_meta %}{{ pagename }}{% endblock %}" />
+    <meta name="keywords" content="{% block keywords_meta %}{{ pagename }}{% endblock %}" />
+    <meta name="description" content="{% block description_meta %}{{ pagename }}{% endblock %}" />
 
     {% block stylesheets %}
         {% stylesheets
-        'bundles/mystatic/css/knacss/knacss.less'
-        'bundles/mystatic/css/font-awesome/font-awesome.less'
-        'bundles/mystatic/css/global.less'
-        'bundles/mystatic/css/responsive.less'
-        'bundles/mystatic/fonts/stylesheet.less'
+        '@MyStaticBundle/Resources/public/css/knacss/knacss.less'
+        '@MyStaticBundle/Resources/public/css/font-awesome/font-awesome.less'
+        '@MyStaticBundle/Resources/public/css/global.less'
+        '@MyStaticBundle/Resources/public/css/responsive.less'
         filter='uglifycss' filter='cssrewrite' %}
 
                 <link rel="stylesheet" href="{{ asset_url }}">
@@ -25,9 +21,8 @@
         {% endstylesheets %}
 
     {% endblock %}
-    {#<link rel="stylesheet" href="{{ asset('bundles/mystatic/fonts/stylesheet.less') }}" />#}
 
-
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 
 
     <!--[if lt IE 9]>
@@ -41,10 +36,11 @@
 
 
 </head>
+
 <body id="{% block id_body %}default{% endblock %}">
 
 
-<header id="main_header" class="white">
+<header id="main_header">
     {% block header %}
     {% endblock %}
 </header>

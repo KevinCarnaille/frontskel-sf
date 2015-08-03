@@ -1,124 +1,19 @@
 /* Created by Kevin Carnaille - 30/07/2015 */
 
-@widthsite = 100%;
-@maincolor1 = #1f2b54; // violet
-@maincolor2 = #809a56; // vert
-@maincolor3 = #9c9b9b; // gris
-@maincolor4 = #e0e0e0; // gris2
-
-
-.row{
-  position: relative;
-}
-
-.op:hover{
-  opacity: 0.7;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-}
-
-.smooth{
-  -moz-transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-
-.white{
-  background-color: #fff;
-}
-
-.purple{
-  color: @maincolor1;
-}
-
-.green{
-  color: @maincolor2;
-}
+@widthSite = 1020px;
+@maincolor1 = #898989;
 
 body{
-  background-color: @maincolor4;
-}
+  background-color: #dedede;
 
-.container{
-  width: @widthsite;
-  margin: auto;
-  h1{
-    color: @maincolor1;
-  }
-
-}
-
-header#main_header{
-   padding: 10px;
-  -moz-box-shadow: 0px 5px 5px 0px #9b9b9b;
-  -webkit-box-shadow: 0px 5px 5px 0px #9b9b9b;
-  -o-box-shadow: 0px 5px 5px 0px #9b9b9b;
-  box-shadow: 0px 5px 5px 0px #9b9b9b;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=180, Strength=5);
-
-  nav ul{
-    padding: 0;
-
-    li{
-      display: inline-block;
-      vertical-align: middle;
-      a{
-        text-decoration: none;
-      }
+  .container{
+    width: @widthSite;
+    margin: auto;
+    h1{
+      color: @maincolor1;
     }
+
   }
 
-
-  nav#main_nav{
-    position: relative;
-    li{
-      a{
-        font-family: 'museo500', serif;
-        font-size: 16px;
-        color: @maincolor3;
-        padding: 10px 20px;
-        display: block;
-      }
-      a:hover{
-        color: @maincolor1;
-      }
-    }
-  }
-
-  #underscore{
-    height: 5px;
-    background-color: @maincolor2;
-    position: absolute;
-    bottom: -10px;
-  }
-
-
 }
-
-.btn.btn-round{
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
-  font: 12px 'museo900';
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.btn.btn-round.green-bg{
-    background: url('../images/green-bg.jpg') repeat-x scroll 0 0 / auto 100%;
-    display: inline-block;
-    padding: 10px 15px;
-    margin-top: 15px;
-    margin-right: 15px;
-}
-
-
-
-
-
-
 

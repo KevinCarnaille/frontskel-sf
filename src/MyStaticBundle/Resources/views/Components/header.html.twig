@@ -1,27 +1,25 @@
 <div class="container">
     <div class="row">
-        <div class="col w20 txtleft">
-            <a class="op" href="{{ path('homepage') }}">
-                <img src="{{ asset('bundles/mystatic/images/logo.svg') }}" width="170" alt=""/>
-            </a>
-        </div>
+        <div class="grid-3-9">
 
-        <div class="col w60 txtcenter">
+            <a href="{{ path('homepage') }}">LOGO</a>
+
             <nav id="main_nav" class="nav">
                 <ul class="unstyled">
-                    <li><a class="smooth" href="{{ path('homepage') }}">{{ menu.homepage }}<sup>®</sup></a></li>
-                    <li><a class="smooth" href="#">{{ menu.products }}</a></li>
-                    <li><a class="smooth" href="#">{{ menu.support }}</a></li>
-                    <li><a class="smooth" href="#">{{ menu.part }}<br/>{{ menu.homepage }}<sup>®</sup></a></li>
+                    <li><a href="#">{{ pagename }}</a></li>
+                    <li><a href="#">{{ pagename }}</a></li>
+                    <li><a href="#">{{ pagename }}</a></li>
+                    <li><a href="#">{{ pagename }}</a></li>
                 </ul>
             </nav>
-            <div id="underscore" class="smooth"></div>
-        </div>
-
-        <div class="col w20 txtright">
             <aside id="social">
-                <a href="#" class="btn btn-round green-bg op">Se connecter</a>
+                <ul class="unstyled">
+                    <li><a href="#">FB</a></li>
+                    <li><a href="#">TW</a></li>
+                    <li><a href="#">G+</a></li>
+                </ul>
             </aside>
+
         </div>
     </div>
 </div>
