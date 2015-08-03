@@ -35,6 +35,14 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    globals:
+#        Pages
+        menu:
+            homepage: 'Smart ECOControl'
+            products: 'Les produits'
+            support: 'Support'
+            part: 'Les partenaires'
+
 
 # Assetic Configuration
 assetic:
