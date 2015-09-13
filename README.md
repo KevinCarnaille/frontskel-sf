@@ -23,6 +23,7 @@ You will have to choose the one your prefer, edit files and base.html.twig asset
 
 =================
 
-Work in Progress
+# Work in Progress
+
 Any ideas, submissions or improvements are welcome
 
