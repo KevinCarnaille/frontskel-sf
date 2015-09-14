@@ -10,10 +10,10 @@
 
     {% block stylesheets %}
         {% stylesheets
-        '@MyStaticBundle/Resources/public/css/knacss/knacss.less'
-        '@MyStaticBundle/Resources/public/css/font-awesome/font-awesome.less'
-        '@MyStaticBundle/Resources/public/css/global.less'
-        '@MyStaticBundle/Resources/public/css/responsive.less'
+        '@MyStaticBundle/Resources/public/less/knacss/knacss.less'
+        '@MyStaticBundle/Resources/public/less/font-awesome/font-awesome.less'
+        '@MyStaticBundle/Resources/public/less/normalize.less'
+        '@MyStaticBundle/Resources/public/less/global.less'
         filter='uglifycss' filter='cssrewrite' %}
 
                 <link rel="stylesheet" href="{{ asset_url }}">
