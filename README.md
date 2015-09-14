@@ -25,5 +25,16 @@ You will have to choose the one your prefer, edit files and base.html.twig asset
 
 # Work in Progress
 
+To run properly the less compilation, don't forget to mention your nodejs path in app/config/config.yml:
+
+For mac users, it can be something like that :
+
+```
+# Assetic Configuration
+assetic:
+   node: /usr/local/bin/node
+```
+
+
 Any ideas, submissions or improvements are welcome
 
