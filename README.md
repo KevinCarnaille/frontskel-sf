@@ -8,6 +8,15 @@ Front-End Skeleton for Symfony2 Development
 - php app/console assets:install web --symlink
 
 
+To run properly the less compilation, don't forget to mention your nodejs path in app/config/config.yml.
+For mac users, it can be something like that :
+
+```
+# Assetic Configuration
+assetic:
+   node: /usr/local/bin/node
+```
+
 # Components:
 
 - CSS Framework KNACSS. You can read all the documentation (in french) about it here:
@@ -26,16 +35,6 @@ You will have to choose the one your prefer, edit files and base.html.twig asset
 =================
 
 # Work in Progress
-
-To run properly the less compilation, don't forget to mention your nodejs path in app/config/config.yml.
-For mac users, it can be something like that :
-
-```
-# Assetic Configuration
-assetic:
-   node: /usr/local/bin/node
-```
-
 
 Any ideas, submissions or improvements are welcome
 
