@@ -34,13 +34,13 @@ If you want to use a more popular CSS framework in your project, you can use bow
 bower install bootstrap
 ```
 
-- **Iconic font and CSS toolkit FONT-AWESOME**. Documentation here: http://fortawesome.github.io/Font-Awesome/
+- **Iconic font and CSS toolkit FONT-AWESOME**. Documentation [here](http://fortawesome.github.io/Font-Awesome/).
 
 - **CSS pre-processor LESS** for every external and internal components (with the help of leafo/lessphp bundle).
 
 - **HTML5shiv.js / Placeholder.js / Respond.js** for all < IE9 issues
 
-- **Cookie Consent** script made by Silktide (https://silktide.com/tools/cookie-consent/download/)
+- **Cookie Consent** script made by [Silktide](https://silktide.com/tools/cookie-consent/download/)
 
 =================
 
