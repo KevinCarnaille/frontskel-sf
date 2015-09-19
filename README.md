@@ -28,7 +28,7 @@ assetic:
 
 - *CSS Framework KNACSS* (lighter than Bootstrap or Foundation). You can read all the documentation (in french) about it here:
 http://knacss.com or https://github.com/raphaelgoetter/KNACSS
-UPDATE 19/09/15 : An experimental css framework is in development process. It will be added to knacss, like a kind of extension.
+UPDATE 19/09/15 : An experimental css framework is in development process. It will be added to knacss, like an extension.
 If you want to use a more popular CSS framework on your project, you can use bower or npm to save the one you prefer :
 ```
 bower install bootstrap
