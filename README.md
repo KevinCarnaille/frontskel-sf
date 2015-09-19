@@ -19,18 +19,29 @@ assetic:
 
 # Components:
 
-- CSS Framework KNACSS. You can read all the documentation (in french) about it here:
+## - Bundles/override :
+
+- leafo/lessphp to compile less
+- TwigBundle override to stylize 404/500 error pages
+
+## - Front-End :
+
+- *CSS Framework KNACSS* (lighter than Bootstrap or Foundation). You can read all the documentation (in french) about it here:
 http://knacss.com or https://github.com/raphaelgoetter/KNACSS
-UPDATE 13/09/15 : An experimental css framework is in development process. It will be added to knacss.
-You will have to choose the one your prefer, edit files and base.html.twig assetic links.
+UPDATE 19/09/15 : An experimental css framework is in development process. It will be added to knacss, like a kind of extension.
 
-- Iconic font and CSS toolkit FONT-AWESOME. Documentation here: http://fortawesome.github.io/Font-Awesome/
+If you want to use a more popular CSS framework on your project, you can use bower or npm to save the one you prefer :
+```
+bower install bootstrap
+```
 
-- CSS pre-processor LESS for every external and internal components (with the help of leafo/lessphp bundle).
+- *Iconic font and CSS toolkit FONT-AWESOME*. Documentation here: http://fortawesome.github.io/Font-Awesome/
 
-- HTML5shiv.js / Placeholder.js / Respond.js for all < IE9 issues
+- *CSS pre-processor LESS* for every external and internal components (with the help of leafo/lessphp bundle).
 
-- Cookie Consent script made by Silktide (https://silktide.com/tools/cookie-consent/download/)
+- *HTML5shiv.js / Placeholder.js / Respond.js* for all < IE9 issues
+
+- *Cookie Consent* script made by Silktide (https://silktide.com/tools/cookie-consent/download/)
 
 =================
 
