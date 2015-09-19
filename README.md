@@ -23,11 +23,11 @@ assetic:
 
 - leafo/lessphp to compile less
 - TwigBundle override to stylize 404/500 error pages
+- Sonata-project/SonataSeoBundle ([documentation](https://sonata-project.org/bundles/seo/master/doc/index.html))
 
 ## - Front-End :
 
-- **CSS Framework KNACSS** (lighter than Bootstrap or Foundation). You can read all the documentation (in french) about it here:
-http://knacss.com or https://github.com/raphaelgoetter/KNACSS
+- **CSS Framework KNACSS** (lighter than Bootstrap or Foundation). You can read all the documentation (in french) about it [here](http://knacss.com) or [here](https://github.com/raphaelgoetter/KNACSS):
 UPDATE 19/09/15 : An experimental css framework is in development process. It will be added to knacss, like an extension.
 If you want to use a more popular CSS framework in your project, you can use bower or npm to save the one you prefer :
 ```
